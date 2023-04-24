@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "foodie-d3ccd": {
+      "hosting": {
+        "foodiee": [
+          "foodie-d3ccd"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "foodie-d3ccd"
+  }
+}

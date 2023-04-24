@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>login</title>
+    <style>
+        body {
+          background-image: linear-gradient(90deg,rgba(243,231,242,0.9),rgba(194,109,188,0.9));
+        }
+        #login{
+        background: -webkit-linear-gradient(#ee82d3,#75105c);
+        font-weight: 700;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        text-align: center;
+        margin-top: 20PX;
+        }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h1 id="login" margin-top="20PX">LOGIN</h1>
+        </div>
+        <div class="row">
+             <h4 style=" text-align:center; color: white; margin-top: 40px; font-size:15px ;">Welcome to Eat Better</h4>
+        </div>
+        <div class="row">
+            <div class="btn-group">
+                <button class="btn" style="background-color: #C26DBC; color: white; font-weight: 700; margin-top:20px;" (click)="gotoemail()" >Email</button>
+                <button class="btn" style="background-color: #C26DBC; color: white; font-weight: 700;margin-top:20px;" (click)="gotophone()">Phone</button>
+            </div>
+        </div>
+        <div class="row" id="form">
+           <router-outlet></router-outlet>
+        </div>
+        <div class="row">
+            <p>don't have an account? <button (click)="gotoRegister()" class="btn" style="background-color: #C26DBC; color: white; font-weight: 700; margin-top:20px;">Register</button></p>
+        </div>
+    </div>
+</body>
+</html>
