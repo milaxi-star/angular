@@ -1,5 +1,31 @@
 
- <app-navbar></app-navbar>
-  <router-outlet></router-outlet>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+     body {
+        background-image: linear-gradient(90deg,rgba(243,231,242,0.9),rgba(194,109,188,0.9)), url(https://i.pinimg.com/564x/6f/c4/76/6fc476c7bf52d205f3c68b8dfe32276b.jpg) ;
+        background-size: cover;
+       
+      }
+  </style>
+</head>
+<body>
+  <div class="row">
+    <img style=" height: 200PX; object-fit: cover;  align-self: auto;" src="https://img.freepik.com/free-vector/cafe-interior-with-coffee-machine-cashier-desk-refrigerator-chalkboard-menu-tables-with-couches-bar-chairs_107791-3398.jpg?w=826&t=st=1679790068~exp=1679790668~hmac=fe270562982c7c9ab555c08faf697abe6e68fa9567b16f3e28265d68d6fcd38a" alt="">
+</div>
+<ng-container *ngIf="loggedin()">
+  <app-navbar2></app-navbar2>
+</ng-container>
+<ng-container *ngIf="!loggedin()">
+  <app-navbar></app-navbar>
+</ng-container>
+<router-outlet></router-outlet>
  <app-footer></app-footer>
+</body>
+</html>
 

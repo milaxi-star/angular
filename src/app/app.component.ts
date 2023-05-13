@@ -6,4 +6,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'foodiee';
+  loggedin(){
+    return localStorage.getItem('token');
+  }
 }

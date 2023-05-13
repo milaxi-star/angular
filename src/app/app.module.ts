@@ -14,9 +14,14 @@ import { CommonModule } from '@angular/common';
 import { EmailComponent } from './email/email.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
+import { FirestoreModule } from '@angular/fire/firestore';
+
 
 import { NavbarComponent } from './navbar/navbar.component';
 import { AddrestaurantComponent } from './addrestaurant/addrestaurant.component';
+import { Home2Component } from './home2/home2.component';
+import { RestaurantDetailsComponent } from './restaurant-details/restaurant-details.component';
+import { Navbar2Component } from './navbar2/navbar2.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +33,10 @@ import { AddrestaurantComponent } from './addrestaurant/addrestaurant.component'
     FooterComponent,
 
     NavbarComponent,
-     AddrestaurantComponent
+     AddrestaurantComponent,
+     Home2Component,
+     RestaurantDetailsComponent,
+     Navbar2Component
   ],
   imports: [
     BrowserModule,

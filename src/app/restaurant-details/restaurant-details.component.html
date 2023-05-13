@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+    <style>
+      p,
+      h1,
+      h3 {
+        color: white;
+      }
+      #contact {
+        width: 30px;
+      }
+      .comment::placeholder {
+        color: white;
+      }
+      .list-group-item {
+        background-color: transparent;
+        border-top: 1px solid #ddd;
+        border-radius: 0;
+        color: #fff;
+      }
+      #review {
+        width: 30px;
+        margin-right: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div
+          class="card"
+          style="
+            background-image: linear-gradient(
+              90deg,
+              #ee82d3,
+              rgba(194, 109, 188, 0.9)
+            );
+          "
+        >
+          <img
+            class="card-img-top"
+            style="height: 300px; object-fit: cover"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf1XcrnANM9HwDKDIv94VCENM0WcnimQ7fRg&usqp=CAU"
+            alt=""
+          />
+          <div class="card-body">
+            <h1 class="card-title">Le Zink</h1>
+            <div id="rating">
+              <img
+                style="width: 15px"
+                src="https://img.icons8.com/office/256/pixel-star.png"
+                alt="rating star"
+              />
+              <img
+                style="width: 15px"
+                src="https://img.icons8.com/office/256/pixel-star.png"
+                alt="rating star"
+              />
+              <img
+                style="width: 15px"
+                src="https://img.icons8.com/office/256/pixel-star.png"
+                alt="rating star"
+              />
+              <img
+                style="width: 15px"
+                src="https://img.icons8.com/office/256/pixel-star.png"
+                alt="rating star"
+              />
+            </div>
+            <div>
+              <p
+                class="card-text"
+                style="font-size: large; color: white; margin-top: 20px"
+              >
+                <span
+                  ><img
+                    id="contact"
+                    src="https://img.icons8.com/dusk/256/phone.png"
+                    alt="phone" /></span
+                >+216 54 804 408
+              </p>
+              <p class="card-text" style="font-size: large; color: white">
+                <span
+                  ><img
+                    id="contact"
+                    src="https://img.icons8.com/officel/256/map-marker.png"
+                    alt=""
+                /></span>
+                1, Rue Salah Ben Mahmoud Menzah 1, Tunis, Tunis Governorate 1004
+              </p>
+            </div>
+            <div
+              style="
+                margin-top: 20px;
+                border-color: #ec6ecd;
+                border-style: solid;
+                border-radius: 6px;
+                border-width: 2px;
+              "
+            >
+              <span class="badge text-bg-secondary" style="margin-left: 15px"
+                >American</span
+              >
+              <span class="badge text-bg-secondary" style="margin-left: 15px"
+                >Burger</span
+              >
+            </div>
+            <div style="margin-top: 40px">
+              <form action="">
+                <div class="input-group mb-3">
+                  <input
+                    placeholder="Add your review"
+                    class="form-control"
+                    style="background: transparent"
+                    id="comment"
+                    type="text"
+                  />
+                  <button
+                    class="btn"
+                    style="background-color: #e6d1e6; color: #7d1a64"
+                  >
+                    comment
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div>
+              <h3>Reviews</h3>
+              <ul class="list-group list-group-flush bg-transparent">
+                <li class="list-group-item">
+                  <span
+                    ><img
+                      id="review"
+                      src="https://img.icons8.com/plasticine/256/speech-bubble.png"
+                      alt="" /></span
+                  >great restaurant
+                </li>
+                <li class="list-group-item">
+                  <span
+                    ><img
+                      id="review"
+                      src="https://img.icons8.com/plasticine/256/speech-bubble.png"
+                      alt="" /></span
+                  >they offer great grilled cheese burgers
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

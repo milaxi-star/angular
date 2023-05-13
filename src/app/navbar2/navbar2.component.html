@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand  bg-body-tertiary" style="border-radius: 15px;">
+    <a class="navbar-brand" href="#">Eat Better</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" style="cursor: pointer;" routerLink="home2" >Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" style="cursor: pointer;" (click)="gotoaddrestaurant()" >add restaurant</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" (click)="onlogout()" style="cursor: pointer;" >Logout</a>
+        </li>
+        
+      </ul>
+      <form class="d-flex" role="search">
+          <label for="search" class="form-label"><img style="width: 35px;" src="https://img.icons8.com/nolan/256/search-more.png"></label>
+        <input id="search" class="form-control me-2" type="search" aria-label="Search">
+        <button class="btn" style="border-color: violet; background-color: #e6d1e6; color: black;" type="submit">Search</button>
+      </form>
+    </div>
+</nav>

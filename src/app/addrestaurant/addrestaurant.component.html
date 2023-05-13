@@ -49,30 +49,30 @@
       <h1 class="title">Request to add a restaurant</h1>
     </div>
     <div class="row">
-      <form class="request" action="">
+      <form class="request" #f="ngForm" >
         <div class="field">
           <label class="form-label" for="name">Name</label>
-          <input id="name" class="form-control" type="text">
+          <input id="name" name="name" class="form-control" type="text" ngModel >
         </div>
         <div class="field">
           <label class="form-label" for="address">Address</label>
-          <input id="address" class="form-control" type="text">
+          <input id="address" name="address" class="form-control" type="text" ngModel>
         </div>
         <div class="field">
           <label class="form-label" for="phone">Phone</label>
-          <input id="phone" class="form-control" type="text">
+          <input id="phone" name="phone" class="form-control" type="text" ngModel>
         </div>
         <div class="field">
           <label class="form-label" for="Speciality">Speciality</label>
-          <input id="speciality" class="form-control" type="text">
+          <input id="speciality" name="speciality" class="form-control" type="text" ngModel>
         </div>
         <div class="field">
           <label class="form-label" for="description" >description <span style="font-size: 10PX;">(optional)</span></label>
-          <input class="form-control" type="text">
+          <input class="form-control"  id="description" name="description" type="text" ngModel>
         </div>
         <div class="row">
           <div class="col-3"></div>
-          <div class="col-6"><div class="d-grid gap-2"><button class="btn" style="margin-top: 10px; margin-bottom: 30px; background-color: #ee82d3; color: white;">submit</button></div></div>
+          <div class="col-6"><div class="d-grid gap-2"><button  class="btn" style="margin-top: 10px; margin-bottom: 30px; background-color: #ee82d3; color: white;">submit</button></div></div>
           <div class="col-3"></div>
         </div>
       </form>
